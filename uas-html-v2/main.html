@@ -5,17 +5,18 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/all.min.css">
         <title>Home Page</title>
     </head>
     <body>
         <!-- TOP NAVBAR -->
         <header>
-            <a class="logo" href="/"><img src="img/btc.png" alt="logo"></a>
+            <a class="logo" href="/"><img style="width: 50px;" src="img/btc.png" alt="logo"></a>
             <nav>
                 <ul class="nav__links">
-                    <li><a href="#">Services</a></li>
+                    <li><a href="">Home</a></li>
                     <li><a href="#">Projects</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="user.html">User</a></li>
                 </ul>
             </nav>
             <a class="cta" href="#">Contact</a>
@@ -24,14 +25,154 @@
         <div class="overlay">
             <a class="close">&times;</a>
             <div class="overlay__content">
-                <a href="#">Services</a>
-                <a href="#">Projects</a>
-                <a href="#">About</a>
+                <a href="">Home</a>
+                <!-- <a href="#">Projects</a> -->
+                <a href="user.html">User</a>
             </div>
         </div>
         <script type="text/javascript" src="js/mobile.js"></script>
-        <!-- End TOP NABAR -->
 
-        <!-- body -->
+        <!-- subtitle -->
+        <div class="content">
+            <h1 class="justText">Selamat datang Kisah Tegar di Wallet Market.</h1>
+        </div>
+
+        <!-- Chart View -->
+        <div class="content">
+            <div class="boxTitle">
+                <h1 class="subTitle">Chart View</h1>
+            </div>
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script type="text/javascript">
+                new TradingView.widget({
+                    // "autosize": true,
+                    "width": "100%",
+                    "height": "300",
+                    "symbol": "BINANCE:BTCUSDT",
+                    "interval": "D",
+                    "timezone": "Asia/Jakarta",
+                    "theme": "light",
+                    "style": "1",
+                    "locale": "en",
+                    "toolbar_bg": "#f1f3f6",
+                    "enable_publishing": false,
+                    "allow_symbol_change": true,
+                    "container_id": "tradingview_92ad5"
+                });
+            </script>
+        </div>
+
+        <!-- Table top coin -->
+        <div class="content">
+            <div class="boxTitle">
+                <h1 class="subTitle">Top Coin</h1>
+            </div>
+            <table class="content-table">
+                <thead>
+                    <tr>
+                        <th style="width: 50%;">Name</th>
+                        <th>Price</th>
+                        <th>Volume</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="active-row">
+                        <td><img src="img/btc.png" alt="btc" class="coinTable"> Bitcoin</td>
+                        <td>$23423.19</td>
+                        <td>105M</td>
+                    </tr>
+                    <tr class="active-row">
+                        <td><img src="img/eth.png" alt="btc" class="coinTable"> Ethereum</td>
+                        <td>$1572.78</td>
+                        <td>100M</td>
+                    </tr>
+                    <tr class="active-row">
+                        <td><img src="img/tht.png" alt="btc" class="coinTable"> Tether</td>
+                        <td>$1.00</td>
+                        <td>700K</td>
+                    </tr>
+                    <tr class="active-row">
+                        <td><img src="img/usdc.png" alt="btc" class="coinTable"> USDC</td>
+                        <td>$1</td>
+                        <td>620k</td>
+                    </tr>
+                    <tr class="active-row">
+                        <td><img src="img/bnb.png" alt="btc" class="coinTable"> BNB</td>
+                        <td>$266.1</td>
+                        <td>100M</td>
+                    </tr>
+                    <tr class="active-row">
+                        <td><img src="img/busd.png" alt="btc" class="coinTable"> Binance</td>
+                        <td>$0.9887</td>
+                        <td>530K</td>
+                    </tr>
+                    <tr class="active-row">
+                        <td><img src="img/xrp.png" alt="btc" class="coinTable"> XRP</td>
+                        <td>$0.3596</td>
+                        <td>100M</td>
+                    </tr>
+                    <tr class="active-row">
+                        <td><img src="img/ada.png" alt="btc" class="coinTable"> Cardano</td>
+                        <td>$0.847</td>
+                        <td>200M</td>
+                    </tr>
+                    <tr class="active-row">
+                        <td><img src="img/sol.png" alt="btc" class="coinTable"> Solana</td>
+                        <td>$40.91</td>
+                        <td>262M</td>
+                    </tr>
+                    <tr class="active-row">
+                        <td><img src="img/doge.png" alt="btc" class="coinTable"> Doge</td>
+                        <td>$0.0679</td>
+                        <td>530M</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br><br><br>
+
+        <!-- FOOTER -->
+        <footer class="footer-distributed">
+			<div class="footer-left">
+                <img src="img/logo.png" alt="">
+				<h3>Fro<span>Coin</span></h3>
+				<!-- <p class="footer-links">
+					<a href="#" class="link-1">Home</a>
+					<a href="#">Blog</a>
+				</p> -->
+				<p class="footer-company-name">Kisah Company © 2022</p>
+			</div>
+
+			<div class="footer-center">
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>Banten</span> Bumi Indah, PasarKemis</p>
+				</div>
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+6282849141947</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:frocoin@company.com">frocoin@company.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+				<p class="footer-company-about">
+					<span>About the company</span>
+					asset crypto sangat perlu diperhatikan ketika anda ingin menginvestasikan uang anda. "Do Your Own Risk".
+				</p>
+
+				<div class="footer-icons">
+					<a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+					<a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+					<a href="https://www.linkedin.com/in/kisah-tegar-putra-abdi-b088b91bb"><i class="fa-brands fa-linkedin"></i></a>
+					<a href="https://github.com/kisahtegar"><i class="fa-brands fa-github"></i></a>
+				</div>
+			</div>
+		</footer>
     </body>
 </html>
